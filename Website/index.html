@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title></title>
+</head>
+<body>
+<section class="showcase">
+  <header>
+    <h2 class="logo"></h2>
+    <div class="toggle"></div>
+  </header>
+  <video src="video.mp4" muted loop autoplay></video>
+  <div class="overlay"></div>
+  <div class="text">
+    <h2>Tomas Dominguez </h2> 
+    <h3>Linux Sysadmin</h3>
+    <p>
+    I work as a SysAdmin at DXC Technology (formerly HP Enterprises). At my actual role, I resolve incidents tickets and implement patchings on Redhat and Solaris enviroments. Currently getting more into Bash Scripting and automatization.</p>
+    <a href="https://www.linkedin.com/in/tomas-dominguez/">Get to know me</a>
+  </div>
+</section>
+<script>
+     const menuToggle = document.querySelector('.toggle');
+      const showcase = document.querySelector('.showcase');
+
+      menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        showcase.classList.toggle('active');
+      })
+</script>
+<div class="menu">
+  <ul>
+    <li><a href="https://www.linkedin.com/in/tomas-dominguez/">LinkedIn</a></li>
+    <li><a href="https://github.com/PaintStrike">GitHub</a></li>
+    <li><a href="https://www.instagram.com/domiingeztomii">Instagram</a></li>
+    <li><a href="mailto:tommia1998@gmail.com">Contact</a></li>
+  </ul>
+</div>
+</body>
+</html>
